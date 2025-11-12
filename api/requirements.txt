@@ -1,4 +1,0 @@
-waitress
-jinja2
-flask
-flask-cors

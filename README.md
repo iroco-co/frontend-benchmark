@@ -1,155 +1,23 @@
-# Iroco Benchmark
+# iroco.co
 
-The goal is to determine which technologies are best suited for the Iroco project.
-In this repo you can find front and back end technologies with the same set of features relevant to a mail application. 
-In each case we provide a full set of tests and comparative results.
+The goal is to determine which technologies are best suited for the Iroco project. The site has moved [here](https://codeberg.org/iroco/frontend-benchmark).
 
-![architecture](slideshow/images/jmeter-selenium.png)
+---
+As an organization that values the building of digital commons, we do not want to participate to the OpenAI/Microsoft LLM model development. 
 
-## Features
+1. We believe that this model is harmful to [human cognition](https://www.bloomberg.com/news/articles/2025-08-12/ai-eroded-doctors-ability-to-spot-cancer-within-months-in-study), [data privacy](https://jskfellows.stanford.edu/theft-is-not-fair-use-474e11f0d063), the [environment](https://iea.blob.core.windows.net/assets/ed0483fd-aab4-4cf9-b25a-5aa362b56a2f/EnergyandAI.pdf) (Copilot consumes [20.8W of power with 90% loss](https://arxiv.org/abs/2411.11892)), [misinformation](https://www.technologyreview.com/2023/10/04/1080801/generative-ai-boosting-disinformation-and-propaganda-freedom-house/), and all its biases: [colonialism](https://karendhao.com/), [racism](https://www.npr.org/2025/07/09/nx-s1-5462609/grok-elon-musk-antisemitic-racist-content), [sexism](https://www.unwomen.org/en/news-stories/interview/2025/02/how-ai-reinforces-gender-bias-and-what-we-can-do-about-it). We are not against AI, we are against the way AI is implemented with Copilot by GitHub and ultimately Microsoft and OpenAI. We use it (for example for translations) sparingly and conscientiously.
 
-To compare technologies we developed the same set of features:
+2. We do not want to contribute to the [techno-authoritarian stack](https://www.authoritarian-stack.info/) that is developing in the United States. We disapprove of Microsoft's involvement in the [hydrocarbon extraction companies](https://www.woodmac.com/horizons/ai-powered-analysis-oil-field-potential/). We don't understand the [version management policy](https://blog.iroco.co/windows10-the-end/) for Windows 10. Last but not least, we wish to maintain sovereignty over our IT stack.
 
-1. A network fetch of a list of mails.
-2. The display of those mails in scrollable view.
-3. An html viewer to display mails.
-4. A text input to search for mails.
+Long version is [here](https://blog.iroco.co/pourquoi-quitter-github/).
 
-You can find the mobile mockup [here](https://framer.com/share/Benchmark--7MGmW80Lo1Lu1AMoMN2Y/jZNcXWNxR).
+---
+Version Française
 
-## Use case senario
+En tant qu'organisation qui valorise la construction de communs numériques, nous ne souhaitons pas alimenter les modèles LLM OpenAI/Microsoft. 
 
-Here is the scenario we use for UI testing:
+1. Nous pensons l'IA générative est délétère, pour la [cognition humaine](https://www.bloomberg.com/news/articles/2025-08-12/ai-eroded-doctors-ability-to-spot-cancer-within-months-in-study), le [respect des données](https://jskfellows.stanford.edu/theft-is-not-fair-use-474e11f0d063), l'[environnement](https://iea.blob.core.windows.net/assets/ed0483fd-aab4-4cf9-b25a-5aa362b56a2f/EnergyandAI.pdf) (l'utilisation de copilot représente une puissance de [20,8W avec 90% de perte](https://arxiv.org/abs/2411.11892)), la [désinformation](https://www.technologyreview.com/2023/10/04/1080801/generative-ai-boosting-disinformation-and-propaganda-freedom-house/), et tous ses biais : le [colonialisme](https://karendhao.com/), le [racisme](https://www.npr.org/2025/07/09/nx-s1-5462609/grok-elon-musk-antisemitic-racist-content), le [sexisme](https://www.unwomen.org/en/news-stories/interview/2025/02/how-ai-reinforces-gender-bias-and-what-we-can-do-about-it). Nous ne sommes pas contre l'IA en tant que telle, nous sommes contre la manière dont l'IA est mise en oeuvre avec Copilot par GitHub  et finalement Microsoft et OpenAI.
 
-1. Type "Hello World!" inside the search bar
-2. Scroll down the list of mails
-3. Click on one
-4. Scroll down the mail
-5. Return to the list of mails
-6. Erase the content in search bar
+2. Nous ne voulons pas alimenter l'[écosystème techno-autoritaire](https://www.authoritarian-stack.info/) qui se met en place aux Etats-Unis. Nous réprouvons l'[aide aux sociétés extractives](https://www.woodmac.com/horizons/ai-powered-analysis-oil-field-potential/) d'hydrocarbures. Nous ne comprenons pas la politique de gestion de [version de Windows 10](https://blog.iroco.co/windows10-the-end/). Surtout, nous souhaitons conserver la souveraineté sur notre environnement informatique.
 
-## Technologies
-
-### Mobile
-
-#### [React Native](https://reactnative.dev/)
-
-#### [Vue native](https://vue-native.io/)
-
-### Web
-
-#### [React](https://reactjs.org/)
-
-#### [Vue](https://vuejs.org/)
-
-## Criteria
-
-### Application size
-
-We are looking at the overall size of the bundled application to reduce the disk and / or network usage.
-
-### Hardware usage
-
-We are deeply concerned about the energy consumption of our service.
-In an ecological approach we tend to reduce as much as possible the footprint of our code on the user device.
-We compare these metrics for the same UI tests:
-
-1. High watermark for heap allocations
-2. High watermark for VM allocations
-3. Persistent heap allocations
-4. Persistent VM allocations
-5. Temporary heap allocations
-6. Total heap allocations
-7. Transient heap allocations
-8. Transient VM allocations
-
-*Average based on 10 measurements for the same test on the same environment.
-
-### Performances
-
-The performance is determined by the speed of execution based on these metrics:
-
-1. Launch time
-2. Duration
-3. Runtime
-4. System time
-5. Time
-6. User time
-
-### Backward compatibility
-
-To avoid planned obsolescence and digital waste we are concerned about backward compatibility.
-We look at the versions of IOS, Android and web browser that can run the framework.
-
-### Maturity / Popularity
-
-A mature framework tends to be more reliant and efficient.
-We are looking 3 metrics to compare the maturity :
-
-1. Number of releases
-2. Frequency of releases
-3. Number of contributors
-
-A popular framework is convenient when it comes to find packages or developers.
-It also improves the overall code quality since the community is more active on finding issues or helping each other.
-We are looking here at metrics that can indicates popularity :
-
-1. Stars on Github
-2. Questions on Stack Overflow
-3. Downloads of packages
-
-## Tools
-
-Here are the tools used to obtain these metrics :
-
-### Mobile
-
-#### [Firebase Performance Monitoring](https://firebase.google.com/products/performance)
-
-#### [XCode](https://help.apple.com/instruments/mac/current/#/dev7b09c84f5)
-
-XCode has a suite of tools to monitor running IOS apps. A good way to get hardware usages. 
-
-
-## API
-
-To test the fronts, you can find an API in the ```api``` folder that mimics a JMAP server.
-The API returns random fake emails as follows :
-
-```json
-{
-  "id": "ma_Ait47m3oFHPS6jds6H0u",
-  "from": { "name": "John Doe", "email": "john.doe@example.com" },
-  "subject": "RE: Secret mission",
-  "receivedAt": "2013-10-13T14:12:00Z",
-  "htmlBody": [
-    {
-      "partId": "1",
-      "type": "text/html"
-    }, {
-      "partId": "2",
-      "type": "text/plain"
-    }
-  ],
-  "bodyValues": {
-    "1": {
-      "value": "<h1>Hello World!</h1>"
-    },
-    "2": {
-      "value": "This is your secret mission"
-    }
-  }
-}
-```
-
-There are two endpoints :
-
-``GET /mails?limit=200``
-
-- Returns a list of 200 mails without ***htmlBody*** and ***bodyValues***.
-
-``GET /mails/random_id``
-
-- Returns an email with ***htmlBody*** and ***bodyValues*** so you can display it.
-
-An online server is available for tests : [https://iroco.herokuapp.com/](https://iroco.herokuapp.com/mails)
+La version longue est [ici](https://blog.iroco.co/pourquoi-quitter-github/).

@@ -1,3 +1,0 @@
-1256	reactWeb/build/
-1384	vueWeb/dist/
-136	svelteWeb/dist/
